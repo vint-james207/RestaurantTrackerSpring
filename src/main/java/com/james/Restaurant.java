@@ -20,12 +20,15 @@ public class Restaurant {
     String location;
 
     @Column(nullable = false)
-    String rating;
+    int rating;
 
     @Column(nullable =false)
     String comment;
 
-    public Restaurant(String name, String location, String rating, String comment) {
+    public Restaurant() {
+    }
+
+    public Restaurant(String name, String location, int rating, String comment) {
         this.name = name;
         this.location = location;
         this.rating = rating;
